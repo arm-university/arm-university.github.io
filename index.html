@@ -1,17 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
- <meta charset="utf-8">
- <title>Redirecting...</title>
- <script>
-   const newBase = "https://arm-education.github.io";
-   const path = window.location.pathname;
-   const query = window.location.search;
-   const hash = window.location.hash;
-   window.location.replace(newBase + path + query + hash);
- </script>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <meta name="robots" content="noindex">
+  <script>
+    (function () {
+      const newBase = "https://arm-education.github.io";
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+      window.location.replace(newBase + path + query + hash);
+    })();
+  </script>
 </head>
 <body>
- <p>Redirecting to Arm Education…</p>
+  <p>Redirecting…</p>
 </body>
 </html>
